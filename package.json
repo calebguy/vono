@@ -13,7 +13,7 @@
 		"typescript": "^5.0.0"
 	},
 	"scripts": {
-		"dev": "bun --filter '*' dev",
+		"dev": "bun --filter 'ui' dev & bun --filter 'server' dev",
 		"format": "bunx @biomejs/biome format --write ."
 	}
 }

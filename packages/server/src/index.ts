@@ -11,5 +11,4 @@ const api = app.basePath("/api").get("/", (c) => {
 });
 
 export type Api = typeof api;
-
 export default app;
