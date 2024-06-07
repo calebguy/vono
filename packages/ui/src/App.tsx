@@ -19,7 +19,7 @@ function App() {
 	});
 	return (
 		<div>
-			<div className="bg-[#0b0b0b] text-[#999999] rounded-lg px-3 py-1">
+			<div className="bg-[#1d1d1d] text-[#999999] rounded-lg px-3 py-1">
 				{data}
 			</div>
 		</div>
