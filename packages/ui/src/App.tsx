@@ -19,9 +19,14 @@ function App() {
 	});
 	return (
 		<div>
-			<div className="bg-[#1d1d1d] text-[#999999] rounded-lg px-3 py-1">
+			<a
+				target="_blank"
+				rel="noopener noreferrer"
+				href="https://github.com/new?template_name=vono&template_owner=calebguy"
+				className="bg-[#1d1d1d] text-[#999999] rounded-lg px-3 py-1.5 hover:text-[#C000FF] border-[1px] border-transparent hover:border-[#C000FF]"
+			>
 				{data}
-			</div>
+			</a>
 		</div>
 	);
 }
