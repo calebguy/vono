@@ -1,4 +1,6 @@
 # vono
 
 ![vono](./vono.gif)
-a hono + vite + tailwind template
+bun + hono + vite + tailwind
+
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy)
