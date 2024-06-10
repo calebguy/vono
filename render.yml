@@ -3,6 +3,7 @@ services:
 - type: web
   name: vono
   runtime: docker
+  repo: https://github.com/calebguy/vono
   plan: free
   region: oregon
   dockerContext: .
