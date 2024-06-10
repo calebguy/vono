@@ -3,3 +3,4 @@ node_modules/
 dist
 *.ai
 .DS_STORE
+assets/
