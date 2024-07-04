@@ -18,15 +18,18 @@ function App() {
 		queryFn: get,
 	});
 	return (
-		<div>
-			<a
-				target="_blank"
-				rel="noopener noreferrer"
-				href="https://github.com/new?template_name=vono&template_owner=calebguy"
-				className="bg-[#1d1d1d] text-[#999999] rounded-lg px-3 py-1.5 hover:text-[#C000FF] border-[1px] border-transparent hover:border-[#C000FF]"
-			>
-				{data}
-			</a>
+		<div className="flex flex-col gap-3">
+			{data?.map((item) => (
+				<a
+					key={item.key}
+					target="_blank"
+					rel="noopener noreferrer"
+					href={item.url}
+					className="bg-[#1d1d1d] text-[#999999] rounded-lg px-3 py-1.5 hover:text-[#C000FF] border-[1px] border-transparent hover:border-[#C000FF]"
+				>
+					{item.title}
+				</a>
+			))}
 		</div>
 	);
 }
