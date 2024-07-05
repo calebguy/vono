@@ -4,4 +4,4 @@ dist
 *.ai
 .DS_STORE
 assets/
-lib
+packages/chain/lib
