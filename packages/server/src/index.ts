@@ -5,6 +5,7 @@ const app = new Hono();
 
 app.use("*", serveStatic({ root: "../ui/dist" }));
 app.use("*", serveStatic({ path: "../ui/dist/index.html" }));
+app.notFound((c) => c.html(Bun.file("../ui/dist/index.html").text()));
 
 const api = app.basePath("/api").get("/", (c) => {
 	return c.json({
