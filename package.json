@@ -1,10 +1,5 @@
 {
 	"name": "vono",
-	"private": "true",
-	"type": "module",
-	"workspaces": [
-    "packages/*"
-  ],
 	"devDependencies": {
 		"@biomejs/biome": "1.7.3",
 		"@types/bun": "latest"
@@ -12,9 +7,14 @@
 	"peerDependencies": {
 		"typescript": "^5.0.0"
 	},
+	"private": "true",
 	"scripts": {
 		"dev": "bun --filter 'ui' dev & bun --filter 'server' dev",
 		"format": "bunx @biomejs/biome format --write .",
 		"start": "bun --filter 'server' start"
-	}
+	},
+	"type": "module",
+	"workspaces": [
+		"packages/*"
+	]
 }
