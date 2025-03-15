@@ -5,3 +5,8 @@ bun + hono + vite + react + tailwind
 
 ### Run
 `bun dev`
+
+### Branches
+- `with-chain`: includes a foundry project in the `chain` package
+
+- `with-db`: includes drizzle config in the `db` package
