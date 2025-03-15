@@ -9,13 +9,10 @@ app.notFound((c) => c.html(Bun.file("../ui/dist/index.html").text()));
 
 const api = app.basePath("/api").get("/", (c) => {
 	return c.json({
-		message: [
-			{
-				key: "standard",
-				title: "VONO",
-				url: "https://github.com/new?template_name=vono&template_owner=calebguy",
-			},
-		],
+		message: {
+			title: "CREATE",
+			url: "https://github.com/new?template_name=vono&template_owner=calebguy",
+		},
 	});
 });
 

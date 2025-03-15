@@ -17,19 +17,17 @@ function App() {
 		queryKey: ["get"],
 		queryFn: get,
 	});
+
 	return (
-		<div className="flex flex-col gap-3">
-			{data?.map((item) => (
-				<a
-					key={item.key}
-					target="_blank"
-					rel="noopener noreferrer"
-					href={item.url}
-					className="bg-[#1d1d1d] text-[#999999] rounded-lg px-3 py-1.5 hover:text-[#C000FF] border-[1px] border-transparent hover:border-[#C000FF]"
-				>
-					{item.title}
-				</a>
-			))}
+		<div className="flex flex-col items-center justify-center h-full grow text-white font-mono">
+			<a
+				target="_blank"
+				rel="noopener noreferrer"
+				href={data?.url}
+				className="bg-background text-grey rounded-lg px-3 py-1.5 hover:text-pink-400 border border-transparent hover:border-pink-400"
+			>
+				{data?.title}
+			</a>
 		</div>
 	);
 }
