@@ -15,11 +15,6 @@ const api = app.basePath("/api").get("/", (c) => {
 				title: "VONO",
 				url: "https://github.com/new?template_name=vono&template_owner=calebguy",
 			},
-			{
-				key: "with-chain",
-				title: "⛓️",
-				url: "https://github.com/new?template_name=vono-with-chain&template_owner=calebguy",
-			},
 		],
 	});
 });
