@@ -9,9 +9,12 @@
 	},
 	"private": "true",
 	"scripts": {
-		"dev": "bun --filter 'ui' dev & bun --filter 'server' dev",
+		"dev": "bun --filter 'db' dev & bun --filter 'server' dev & bun --filter 'ponder' dev & bun --filter 'ui' dev",
 		"format": "bunx @biomejs/biome format --write .",
-		"start": "bun --filter 'server' start"
+		"ponder:start": "bun --filter 'ponder' start",
+		"db:migrate": "bun --filter 'db' migrate",
+		"server:install": "bun --filter 'server' install",
+		"server:start": "bun --filter 'server' start"
 	},
 	"type": "module",
 	"workspaces": [
