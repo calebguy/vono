@@ -1,11 +1,9 @@
 import { Hono } from "hono";
-import { serveStatic } from "hono/bun";
+import { cors } from "hono/cors";
 
 const app = new Hono();
 
-app.use("*", serveStatic({ root: "../ui/dist" }));
-app.use("*", serveStatic({ path: "../ui/dist/index.html" }));
-app.notFound((c) => c.html(Bun.file("../ui/dist/index.html").text()));
+app.use("*", cors());
 
 const api = app.basePath("/api").get("/", (c) => {
 	return c.json({

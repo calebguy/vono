@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@theme {
+	--color-background: #1d1d1d;
+	--color-pink: #ff69b4;
+	--font-mono: var(--font-geist-mono);
+}
+
+:root {
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body {
+	min-height: 100svh;
+	display: flex;
+	flex-direction: column;
+	background-color: var(--color-pink);
+}
+
+body {
+	flex: 1;
+}

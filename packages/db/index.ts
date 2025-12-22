@@ -1,23 +1,23 @@
-import { drizzle as drizzleNeon } from "drizzle-orm/neon-http";
 import { drizzle } from "drizzle-orm/node-postgres";
 
 class Db {
 	private pg;
 
-	constructor(
-		private readonly connectionUrl: string,
-		isNeon: boolean,
-	) {
-		const params = {
+	constructor(private readonly connectionUrl: string) {
+		this.pg = drizzle({
 			casing: "snake_case",
 			connection: this.connectionUrl,
 			schema: {
 				//schema, relations
 			},
-		};
-		//@ts-expect-error
-		this.pg = isNeon ? drizzleNeon(params) : drizzle(params);
+		});
 	}
+
+	// getRecordFromTable(key: string) {
+	// 	return this.pg.query.table.findMany({
+	// 		where: eq(table.key, key),
+	// 	});
+	// }
 }
 
 export { Db };
