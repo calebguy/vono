@@ -25,7 +25,7 @@ export default async function Image() {
 				fontFamily: "system-ui, sans-serif",
 			}}
 		>
-			vono
+			VONO
 		</div>,
 		{
 			...size,
