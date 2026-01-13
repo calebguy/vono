@@ -13,6 +13,13 @@ const client = hc<Api>("/");
 //   return (await res.json()).message;
 // }
 
+const versions = {
+	nextjs: "16.1.0",
+	hono: "4.11.4",
+	ponder: "0.16.1",
+	drizzle: "0.45.1",
+};
+
 export default function Home() {
 	// const { data } = useQuery({
 	//   queryKey: ["get"],
@@ -20,7 +27,7 @@ export default function Home() {
 	// });
 
 	return (
-		<div className="flex flex-col items-center justify-center h-full grow text-white font-mono">
+		<div className="flex flex-col items-center justify-center h-full grow text-white font-mono gap-8">
 			<a
 				target="_blank"
 				rel="noopener noreferrer"
@@ -29,6 +36,12 @@ export default function Home() {
 			>
 				CREATE
 			</a>
+			<div className="flex flex-col italic sm:not-italic sm:flex-row sm:gap-2.5 font-mono text-sm text-yellow-200 bg-yellow-600 px-1.5 py-0.5 rounded-sm">
+				<span>next.js: {versions.nextjs}</span>
+				<span>hono: {versions.hono}</span>
+				<span>ponder: {versions.ponder}</span>
+				<span>drizzle: {versions.drizzle}</span>
+			</div>
 		</div>
 	);
 }

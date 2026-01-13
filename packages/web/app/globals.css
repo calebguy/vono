@@ -24,3 +24,13 @@ body {
 body {
 	flex: 1;
 }
+
+::selection {
+	background: var(--color-pink-600);
+	color: var(--color-yellow-200);
+}
+
+::-moz-selection {
+	background: var(--color-pink-600);
+	color: var(--color-yellow-200);
+}
