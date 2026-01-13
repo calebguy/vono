@@ -22,6 +22,7 @@ export default async function Image() {
 				justifyContent: "center",
 				color: "#fef085",
 				fontWeight: 700,
+				fontFamily: "system-ui, sans-serif",
 			}}
 		>
 			vono

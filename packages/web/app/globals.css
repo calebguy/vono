@@ -3,7 +3,6 @@
 @theme {
 	--color-background: #1d1d1d;
 	--color-pink: #ff69b4;
-	--font-mono: var(--font-geist-mono);
 }
 
 :root {
