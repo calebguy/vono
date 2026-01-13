@@ -20,7 +20,7 @@ export default async function Image() {
 				display: "flex",
 				alignItems: "center",
 				justifyContent: "center",
-				color: "#d08700",
+				color: "#fef085",
 				fontWeight: 700,
 			}}
 		>
@@ -28,6 +28,6 @@ export default async function Image() {
 		</div>,
 		{
 			...size,
-		}
+		},
 	);
 }
