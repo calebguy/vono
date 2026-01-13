@@ -25,7 +25,15 @@ export default async function Image() {
 				fontFamily: "system-ui, sans-serif",
 			}}
 		>
-			VONO
+			<div
+				style={{
+					background: "#ca8a04",
+					padding: "16px 48px",
+					borderRadius: 16,
+				}}
+			>
+				VONO
+			</div>
 		</div>,
 		{
 			...size,

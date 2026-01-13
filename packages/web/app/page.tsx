@@ -36,7 +36,7 @@ export default function Home() {
 			>
 				CREATE
 			</a>
-			<div className="flex flex-col italic sm:not-italic sm:flex-row sm:gap-2.5 font-mono text-sm text-yellow-200 bg-yellow-600 px-1.5 py-0.5 rounded-sm">
+			<div className="fixed bottom-4 left-1/2 -translate-x-1/2 flex flex-col italic sm:not-italic sm:flex-row sm:gap-2.5 font-mono text-sm text-yellow-200 bg-yellow-600 px-1.5 py-0.5 rounded-sm">
 				<span>next.js: {versions.nextjs}</span>
 				<span>hono: {versions.hono}</span>
 				<span>ponder: {versions.ponder}</span>
