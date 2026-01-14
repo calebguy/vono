@@ -3,6 +3,7 @@ import "./globals.css";
 import { Providers } from "./providers";
 
 export const metadata: Metadata = {
+	metadataBase: new URL("https://vono.dev"),
 	title: "vono",
 	description: "a template for things",
 	openGraph: {
