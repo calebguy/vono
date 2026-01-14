@@ -13,7 +13,7 @@ export default async function Image() {
 	return new ImageResponse(
 		<div
 			style={{
-				fontSize: 128,
+				fontSize: 72,
 				background: "#ff69b4",
 				width: "100%",
 				height: "100%",
@@ -28,7 +28,7 @@ export default async function Image() {
 			<div
 				style={{
 					background: "#ca8a04",
-					padding: "16px 48px",
+					padding: "12px 32px",
 					borderRadius: 16,
 				}}
 			>
